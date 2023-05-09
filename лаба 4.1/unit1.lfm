@@ -1,0 +1,68 @@
+object Form1: TForm1
+  Left = 256
+  Height = 317
+  Top = 145
+  Width = 367
+  Caption = 'Form1'
+  ClientHeight = 317
+  ClientWidth = 367
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 32
+    Top = 24
+    Width = 224
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'введите полный путь к файлу test.txt'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 96
+    Width = 120
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'для ввода текста'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 56
+    Width = 296
+    AutoSize = False
+    AutoSelect = False
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 90
+    Top = 128
+    Width = 296
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 48
+    Height = 25
+    Top = 248
+    Width = 75
+    Caption = 'записать'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 200
+    Height = 25
+    Top = 248
+    Width = 75
+    Caption = 'добавить'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+end
